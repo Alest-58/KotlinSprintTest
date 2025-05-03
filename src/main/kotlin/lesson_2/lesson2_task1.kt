@@ -7,5 +7,6 @@ fun main () {
     val thirdStudent = 3
     val fourthStudent = 5
     val averageScore = (firstStudent + secondStudent + thirdStudent + fourthStudent) / 4f
+
     println(averageScore)
 }
