@@ -4,7 +4,7 @@ fun main() {
     val surname = "сидорова"
     val name = "Татьяна"
     val patronymic = "Сергеевна"
-    val age = 22
+    val age = 23
 
 
     println("$surname $name $patronymic, $age")
