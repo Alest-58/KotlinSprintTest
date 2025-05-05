@@ -1,13 +1,14 @@
 package org.example.lesson_2
 
-const val oneHundred = 100
+const val ONE_HUNDRED = 100
+
 fun main() {
     val crystallineOre = 7
     val ironOre = 11
     val buff = 20
+    val buffCrystallineOre = (crystallineOre * buff) / ONE_HUNDRED
+    val buffironOre = (ironOre * buff) / ONE_HUNDRED
 
-    val buffCrystallineOre = (crystallineOre * buff) / oneHundred
-    val buffironOre = (ironOre * buff) / oneHundred
     println(buffCrystallineOre)
     println(buffironOre)
 }
