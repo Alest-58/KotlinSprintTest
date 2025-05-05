@@ -8,6 +8,5 @@ fun main() {
     val availabilityOfTablesForToday: Boolean = reservedTablesToday != TOTAL_TABLES
     val availabilityOfTablesForTomorrow: Boolean = reservedTablesTomorrow < TOTAL_TABLES
 
-    println("Доступность столиков на сегодня:$availabilityOfTablesForToday")
-    println("Доступность столиков на завтра:$availabilityOfTablesForTomorrow")
+    println("Доступность столиков на сегодня:$availabilityOfTablesForToday\nДоступность столиков на завтра:$availabilityOfTablesForTomorrow")
 }
