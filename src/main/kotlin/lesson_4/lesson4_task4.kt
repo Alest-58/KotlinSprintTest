@@ -1,12 +1,12 @@
 package org.example.lesson_4
 
 fun main() {
-    val days = 1..5
-    val day5 = 5
-    val exercisesForTheHands = day5 in days
-    val legExercises = day5 !in days
-    val exercisesForTheBack = day5 !in days
-    val exercisesForThePress = day5 in days
+    val day = 5
+    val day5 = (day % 2) == 0
+    val exercisesForTheHands = !day5
+    val legExercises = day5
+    val exercisesForTheBack = day5
+    val exercisesForThePress = !day5
 
     println(
         """Упражнения для рук:    $exercisesForTheHands
