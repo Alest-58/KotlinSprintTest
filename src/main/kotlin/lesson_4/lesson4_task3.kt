@@ -1,20 +1,19 @@
 package org.example.lesson_4
 
+const val IS_SUNNY = true
+const val IS_AWNING_OPEN = true
+const val AIR_HUMIDITY = 20
+const val TIME_OF_THE_YEAR = "зима"
+
 fun main() {
-    val availabilityOfSunnyWeather = true
-    val outdoorAwning = true
-    val airHumidityIs = 20
-    val theCurrentTimeOfTheYear = "не зима"
     val weatherToday = true
     val awningAtTheMoment = true
     val airHumidity = 20
     val currentTimeOfTheYear = "зима"
-    val result = (availabilityOfSunnyWeather == weatherToday) && (airHumidityIs == airHumidity)
-    val result1 = airHumidityIs == airHumidity
-    val result2 = theCurrentTimeOfTheYear !== currentTimeOfTheYear
-    val result3 = result == result1 == result2
+    val result = (IS_SUNNY == weatherToday) && (AIR_HUMIDITY == airHumidity)
+            && (IS_AWNING_OPEN == awningAtTheMoment) && (currentTimeOfTheYear != TIME_OF_THE_YEAR)
 
-    println("Благоприятные ли условия сейчас для роста бобовых? $result3")
+    println("Благоприятные ли условия сейчас для роста бобовых? $result")
 }
 
 
