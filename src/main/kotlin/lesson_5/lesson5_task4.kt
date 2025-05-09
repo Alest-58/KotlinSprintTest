@@ -8,10 +8,10 @@ fun main() {
     val userName1 = readln()
     if (USER_NAME == userName1) {
         println("Введите пароль!")
-    }
-    val userPassword1 = readln()
-    if (USER_PASSWORD == userPassword1) {
-        println("Приветствую тебя Zaphod")
+        val userPassword1 = readln()
+        if (USER_PASSWORD == userPassword1)
+            println("Приветствую тебя Zaphod")
+        else println("Пройдите регистрацию!")
     } else println("Пройдите регистрацию!")
 }
 
