@@ -10,14 +10,18 @@ fun main() {
     println("Введите 2 число ")
     val userNumber2 = readln().toInt()
 
-    if (NUMBER_WIN_1 == userNumber1 && NUMBER_WIN_2 == userNumber2) {
+    if (NUMBER_WIN_1 == userNumber1 && NUMBER_WIN_2 == userNumber2 ||
+        NUMBER_WIN_2 == userNumber1 && NUMBER_WIN_1 == userNumber2
+    ) {
         println("Поздравляем! Вы выиграли главный приз!")
-    } else if (NUMBER_WIN_2 == userNumber1 && NUMBER_WIN_1 == userNumber2) {
-        println("Поздравляем! Вы выиграли главный приз!")
-    } else if (NUMBER_WIN_1 == userNumber1 || NUMBER_WIN_2 == userNumber2) {
+//    } else if (NUMBER_WIN_2 == userNumber1 && NUMBER_WIN_1 == userNumber2) {
+//        println("Поздравляем! Вы выиграли главный приз!")
+    } else if (NUMBER_WIN_1 == userNumber1 || NUMBER_WIN_2 == userNumber2 ||
+        NUMBER_WIN_2 == userNumber1 || NUMBER_WIN_1 == userNumber2
+    ) {
         println("Вы выиграли утешительный приз!")
-    } else if (NUMBER_WIN_2 == userNumber1 || NUMBER_WIN_1 == userNumber2) {
-        println("Вы выиграли утешительный приз!")
+//    } else if (NUMBER_WIN_2 == userNumber1 || NUMBER_WIN_1 == userNumber2) {
+//        println("Вы выиграли утешительный приз!")
     } else println("Неудача!")
     println("Числа для выигрыша 10 и 30!!!")
 }
