@@ -1,15 +1,13 @@
 package org.example.lesson_5
 
-import kotlin.random.Random
-
 fun main() {
-    val number = Random.nextInt(1, 100)
-    val number1 = Random.nextInt(1, 100)
+    val number = (1..100).random()
+    val number1 = (1..100).random()
     println("Сложите  два числа $number + $number1")
     val numberEntered = readln().toInt()
-    val userAnswer = number + number1
+    val correctAnswer = number + number1
 
-    if (numberEntered == userAnswer) {
+    if (numberEntered == correctAnswer) {
         println("Добро пожаловать!")
     } else {
         println("Доступ запрещен.")
